@@ -5,11 +5,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - make lint
+      - run: make lint
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - make build
-      - make install
-      - hello
+      - run: make build
+      - run: make install
+      - run: hello
