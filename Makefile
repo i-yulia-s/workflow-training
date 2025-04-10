@@ -8,4 +8,4 @@ install:
 	uv tool install --force dist/*.whl
 
 say-hello:
-	@hello
+	@echo "Hello, World!"
